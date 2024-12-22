@@ -1,60 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fawaz Ahmed's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Fawaz Ahmed</h1>
-      <img src="images/PI.jpg" alt="Fawaz Ahmed" class="profile-img" />
-      <p>Python Developer & Machine Learning Engineer</p>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fawaz Ahmed Portfolio</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-    <section class="about">
-      <h2>About Me</h2>
-      <p>Skilled in Python development, machine learning, and AI-driven solutions.</p>
+        header {
+            background: linear-gradient(135deg, #4CAF50, #81C784);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 0;
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .profile {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #4CAF50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #4CAF50;
+            border-bottom: 3px solid #4CAF50;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .project-list, .experience-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .project-item, .experience-item {
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project-item:hover, .experience-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-item h3, .experience-item h3 {
+            margin: 0 0 0.5rem;
+            color: #4CAF50;
+        }
+
+        .project-item p, .experience-item p {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+
+        .contact {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #81C784, #4CAF50);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            padding: 0.75rem 1.5rem;
+            margin: 0.5rem;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .contact a:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #333;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Fawaz Ahmed Dar</h1>
+    <p>Python Developer | Machine Learning Engineer</p>
+</header>
+
+<div class="profile">
+    <img src="images/PI.jpg" alt="Fawaz Ahmed">
+</div>
+
+<div class="container">
+
+    <section class="section">
+        <h2>Professional Summary</h2>
+        <p>Skilled Python Developer & Machine Learning Engineer with expertise in Flask, Django, NLP, and data analysis. Proficient in developing AI-driven applications, optimizing models, and leading teams to deliver innovative solutions.</p>
     </section>
 
-    <section class="projects">
-      <h2>Projects</h2>
+    <section class="section">
+        <h2>Work Experience</h2>
+        <ul class="experience-list">
+            <li class="experience-item">
+                <h3>Data Scientist | Python Developer</h3>
+                <p><strong>DTools Incorporation</strong>, San Francisco, CA | March 2024 - Present</p>
+                <p>Led AI & Python team, providing guidance on innovative product development, building face recognition systems, AI chatbots, and psychological state detection solutions.</p>
+            </li>
+            <li class="experience-item">
+                <h3>AI Engineer (LLMs, GenAI)</h3>
+                <p><strong>Systems Limited</strong>, Islamabad, Pakistan | June 2023 - Present</p>
+                <p>Implemented Generative AI solutions, designed document summarization engines, and deployed generative chatbots, enhancing efficiency by 35%.</p>
+            </li>
+            <li class="experience-item">
+                <h3>Machine Learning Engineer (Internship)</h3>
+                <p><strong>IBM</strong>, Islamabad, Pakistan | Sept 2022 - June 2023</p>
+                <p>Optimized predictive models for demand forecasting and anomaly detection, achieving a 92% F1 score in automated text classification.</p>
+            </li>
+        </ul>
+    </section>
 
-      <!-- Image Analysis Project -->
-      <div class="project">
-        <h3>Image Analysis (Glitch, Poisoning, Pixel Rotation)</h3>
-        <img src="images/project1.jpg" alt="Image Analysis Project" />
-        <p>Developed robust algorithms for mitigating visual data inconsistencies, improving security and robustness in computer vision pipelines.</p>
-        <a href="https://github.com/fawazahmed/image-analysis" target="_blank">View Project</a>
-      </div>
-
-      <!-- AI Chatbot for Mental Health Support -->
-      <div class="project">
-        <h3>AI Chatbot for Mental Health Support</h3>
-        <img src="images/project2.jpg" alt="AI Chatbot Project" />
-        <p>Created an AI chatbot to provide mental health support focusing on stress and anxiety management.</p>
-        <a href="https://github.com/fawazahmed/ai-chatbot" target="_blank">View Project</a>
-      </div>
-
-      <!-- Add more projects here -->
-      <!-- Example of another project -->
-      <div class="project">
-        <h3>YOLO Model for Pedestrian and Vehicle Detection</h3>
-        <img src="images/project3.jpg" alt="YOLO Model Project" />
-        <p>Implemented YOLO for real-time detection of pedestrians and vehicles, optimized for diverse environments.</p>
-        <a href="https://github.com/fawazahmed/yolo-model" target="_blank">View Project</a>
-      </div>
+    <section class="section">
+        <h2>Projects Portfolio</h2>
+        <ul class="project-list">
+            <li class="project-item">
+                <h3>Image Analysis (Glitch, Poisoning, Pixel Rotation)</h3>
+                <p>Conducted in-depth analysis of image perturbations, including glitches, poisoning, and pixel rotation techniques. Improved security and robustness in computer vision pipelines.</p>
+            </li>
+            <li class="project-item">
+                <h3>AI Chatbot for Mental Health Support</h3>
+                <p>Designed and developed an AI-powered chatbot with Flask and NLP for real-time stress and anxiety management.</p>
+            </li>
+            <li class="project-item">
+                <h3>AI Chatbot for Email Content Calendar Analysis</h3>
+                <p>Automated email scheduling with an AI chatbot capable of generating ICS files for calendar events.</p>
+            </li>
+            <li class="project-item">
+                <h3>Gaussian Implementation on Ultrasound Images</h3>
+                <p>Developed Gaussian models to enhance ultrasound image quality, improving edge detection and diagnostic accuracy.</p>
+            </li>
+            <li class="project-item">
+                <h3>Random Forest Classification Model</h3>
+                <p>Implemented a Random Forest model with hyperparameter tuning for accurate predictions and feature analysis.</p>
+            </li>
+            <li class="project-item">
+                <h3>KNN using MIPS Assembly</h3>
+                <p>Developed a KNN algorithm in MIPS Assembly for efficient time-series predictions on provided datasets.</p>
+            </li>
+            <li class="project-item">
+                <h3>UNet++ for Road Elements Detection</h3>
+                <p>Used UNet++ architecture to identify road elements from satellite imagery for urban planning insights.</p>
+            </li>
+            <li class="project-item">
+                <h3>YOLO Model for Pedestrian and Vehicle Detection</h3>
+                <p>Implemented YOLO for real-time detection of pedestrians and vehicles to enhance traffic monitoring systems.</p>
+            </li>
+            <li class="project-item">
+                <h3>Tableau and Power BI Dashboards</h3>
+                <p>Created interactive dashboards showcasing operational and financial insights for data-driven decision-making.</p>
+            </li>
+        </ul>
     </section>
 
     <section class="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:fawaz.ahmed@email.com">fawaz.ahmed@email.com</a></p>
-      <p>GitHub: <a href="https://github.com/fawazahmed">fawazahmed</a></p>
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:fawazahmeddar@example.com">fawazahmeddar@example.com</a></p>
+        <a href="https://github.com/fawazdar2196" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/fawaz-ahmed-dar-266079168/" target="_blank">LinkedIn</a>
     </section>
 
-    <footer>
-      <p>© 2024 Fawaz Ahmed</p>
-    </footer>
-  </body>
+</div>
+
+<footer>
+    <p>&copy; 2024 Fawaz Ahmed Dar. Built with passion.</p>
+</footer>
+
+</body>
 </html>
