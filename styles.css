@@ -11,10 +11,10 @@ body {
 
 /* Header */
 header {
-    background-color: #0066cc;
+    background-color: #a8d5ba; /* Light green color */
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: 20px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -51,14 +51,14 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #004c99;
+    background-color: #4b9e7e; /* Darker green hover effect */
     border-radius: 5px;
 }
 
 /* Main Section (home, about, projects, contact) */
 section {
     padding: 80px 20px;
-    margin-top: 80px; /* Space for the fixed header */
+    margin-top: 100px; /* Space for the fixed header */
 }
 
 .profile-pic {
@@ -66,18 +66,23 @@ section {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
-    border: 5px solid #0066cc;
+    border: 5px solid #a8d5ba;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2 {
     font-size: 2em;
     color: #333;
+    text-align: center;
 }
 
 h3 {
     font-size: 1.8em;
     color: #0066cc;
     margin-top: 40px;
+    text-align: center;
 }
 
 ul {
@@ -96,10 +101,13 @@ a:hover {
 
 /* Footer */
 footer {
-    background-color: #0066cc;
+    background-color: #a8d5ba; /* Light green color */
     color: white;
     padding: 10px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 /* Button Styling */
@@ -116,6 +124,11 @@ button {
 
 button:hover {
     background-color: #004c99;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Layout Fixes */
