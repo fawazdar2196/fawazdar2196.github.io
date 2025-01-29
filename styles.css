@@ -6,7 +6,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     height: 100%;
 }
 
@@ -21,6 +20,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -58,22 +58,24 @@ nav ul li a:hover {
 
 /* Main Section (home, about, projects, contact) */
 section {
-    padding: 100px 20px; /* Added padding to make space for the header */
-    margin-top: 60px; /* Adjusted to keep the content visible under the header */
-    min-height: 100vh; /* Ensures full screen height */
+    padding: 100px 20px; /* Space for the header */
+    margin-top: 60px; /* Additional spacing for header */
+    min-height: 100vh; /* Ensure full screen height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Profile Image Styling */
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
     border: 5px solid #a8d5ba;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
+/* Content and Text Alignment */
 h2 {
     font-size: 2em;
     color: #333;
@@ -110,6 +112,7 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    z-index: 1000;
 }
 
 /* Button Styling */
@@ -151,13 +154,15 @@ section {
     margin: 20px 0;
 }
 
-/* Ensure content is scrollable */
+/* Ensure content is scrollable and visible */
 html, body {
     height: 100%;
+    overflow-y: auto;
 }
 
 body {
-    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
