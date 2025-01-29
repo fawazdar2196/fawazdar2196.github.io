@@ -6,6 +6,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     height: 100%;
 }
 
@@ -58,12 +59,13 @@ nav ul li a:hover {
 
 /* Main Section (home, about, projects, contact) */
 section {
-    padding: 100px 20px; /* Space for the header */
-    margin-top: 60px; /* Additional spacing for header */
+    padding: 100px 20px; /* Adjusted for header */
+    margin-top: 120px; /* Additional margin for header */
     min-height: 100vh; /* Ensure full screen height */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 /* Profile Image Styling */
@@ -73,6 +75,7 @@ section {
     border-radius: 50%;
     margin-bottom: 20px;
     border: 5px solid #a8d5ba;
+    display: block;
 }
 
 /* Content and Text Alignment */
